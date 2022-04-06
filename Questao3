@@ -1,0 +1,33 @@
+package Exercicios7;
+
+import java.util.Scanner;
+
+public class Questao3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    
+		/*Leia uma matriz 3 x 3, conte e escreva quantos valores maiores que 10 ela possui.*/
+		
+		int[] [] valores = new int [3][3];
+		int quant10=0,x,y;
+		Scanner leia = new Scanner(System.in);
+		
+		for(x=0;x<3;x++)
+		{
+			for(y=0;y<3;y++)
+			{
+				System.out.println("\nInsira um número: ");
+				valores[x][y]  = leia.nextInt();
+				
+				if(valores[x][y]>10)
+				{
+					quant10++;
+				}				
+			}
+			System.out.println("\nNúmeros maiores que 10: "+quant10);
+			
+		}
+	}
+
+}
